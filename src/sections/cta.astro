@@ -1,0 +1,53 @@
+---
+import Ctimage from "../../public/ctaimage.png"
+import Button from "../components/Button"
+---
+<div class="mx-auto max-w-5xl">
+	<div class="flex justify-between pt-10 pb-10 border-b-2 border-[#fef9f1]">
+		<div class="flex gap-3">
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width={1.5} stroke="currentColor" class="w-12 h-12">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+				  </svg>
+			</div>
+			<div>
+				<h1 class="font-bold">Subscription</h1>
+				<p class="text-slate-500">Lorem ipsum dolor sit am</p>
+			</div>
+		</div>
+		<div class="flex gap-3">
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width={1.5} stroke="currentColor" class="w-12 h-12">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+				  </svg>
+			</div>
+			<div>
+				<h1 class="font-bold">Convenient subscription</h1>
+				<p class="text-slate-500">Lorem ipsum dolor sit am</p>
+			</div>
+		</div>
+		<div class="flex gap-3">
+			<div>
+				<svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width={1.5} stroke="currentColor" class="w-12 h-12">
+					<path stroke-linecap="round" stroke-linejoin="round" d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+				  </svg>
+			</div>
+			<div>
+				<h1 class="font-bold">Cancel anytime</h1>
+				<p class="text-slate-500">Lorem ipsum dolor sit am</p>
+			</div>
+		</div>
+	</div>
+	<div class="grid grid-cols-2 pt-14 pb-14">
+		<div class="flex flex-col justify-center items-center">
+			<img src={Ctimage.src} alt="ctaimage" class="max-w-full"/>
+		</div>
+		<div class="flex flex-col justify-center items-start gap-4">
+			<h1 class="font-bold text-4xl">Curate with premium products for self-care</h1>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure illo quia, quod quis obcaecati impedit corporis, laudantium aut nam, est asperiores accusamus nihil iusto tenetur quibusdam hic ad libero dolore.</p>
+			<div class="mt-5">
+				<Button text="Subscribe now" type="primary" client:load />
+			</div>
+		</div>		
+	</div>
+</div>

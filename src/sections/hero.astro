@@ -1,0 +1,21 @@
+---
+import Header from "../components/Header.astro"
+import Bgimage from "../../public/heroimage2.png"
+import Button from "../components/Button.tsx"
+---
+<div class="bg-[#fef9f1]">
+	<Header/>
+	<div class="py-36 mx-auto max-w-5xl flex grid-cols-2 items-center">
+		<div class="flex flex-col gap-4">
+			<h1 class="font-bold text-5xl">The #1 <br /> personal care<br /> monthly box</h1>
+			<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iure illo quia, quod quis obcaecati impedit corporis, laudantium aut nam, est asperiores accusamus nihil iusto tenetur quibusdam hic ad libero dolore.</p>
+			<div class="flex gap-4 mt-5">
+				<Button text="Get started" type="primary" client:load />
+				<Button text="Learn more" type="secondary" client:load />
+			</div>
+		</div>
+		<div class="flex justify-center items-center">
+			<img src={Bgimage.src} alt="heroimage2" class="w-full h-auto"/>
+		</div>
+	</div>
+</div>

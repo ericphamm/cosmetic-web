@@ -1,0 +1,32 @@
+---
+import Contact from '../sections/contact.astro'
+import Cta from '../sections/cta.astro'
+import Footer from '../sections/footer.astro'
+import Hero from '../sections/hero.astro'
+import Infographic from '../sections/infographic.astro'
+import Reviews from '../sections/reviews.astro'
+import Socials from '../sections/socials.astro'
+import Subscribe from '../sections/subscribe.astro'
+import Team from '../sections/team.astro'
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<title>Astro</title>
+	</head>
+	<body class="">
+		<Hero />
+		<Cta />
+		<Subscribe />
+		<Infographic />
+		<Socials />
+		<Team />
+		<Reviews />
+		<Contact />
+		<Footer />
+	</body>
+</html>
